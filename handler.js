@@ -206,7 +206,7 @@ const user = m.isGroup
   ? participants.find(u => normalizeJid(u.jid) === senderNum) 
   : {}
 const bot = m.isGroup 
-  ? participants.find(u => botNums.includes(normalizeJid(u.id))) 
+  ? participants.find(u => botNums.includes(normalizeJid(u.id && u.jid))) 
   : {}
 
 const isRAdmin = user?.admin === 'superadmin'
@@ -281,8 +281,7 @@ conn: this,
 // Tesis estuvo aquí 🙀
                 let text = _args.join` `  
 command = (command || '').toLowerCase()  
-const gruposPermitidos = [
-  '120363146549758457@g.us','120363418782296007@g.us','120363402374296588@g.us','120363402051958678@g.us','120363421042789814@g.us','120363401850292240@g.us'
+const gruposPermitidos = ['120363420992965884@g.us','120363404767596170@g.us'
 ];
 
 const comandosPermitidos = ['serbot', 'bots', 'kick', 'code', 's', 'delsession', 'on', 'off', 'tutosub'];
@@ -489,7 +488,7 @@ global.dfail = (type, m, conn, usedPrefix) => {
         private: " |𝐀𝐯𝐢𝐬𝐨|  _*`💬 𝐔𝐒𝐀 𝐄𝐋 𝐂𝐇𝐀𝐓 𝐏𝐑𝐈𝐕𝐀𝐃𝐎 𝐏𝐀𝐑𝐀 𝐄𝐒𝐓𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎⚡`*_",
         admin: "  |𝐀𝐯𝐢𝐬𝐨| _*`😂 𝐓𝐔 𝐍𝐎 𝐄𝐑𝐄𝐒 𝐀𝐃𝐌𝐈𝐍 😝⚡`*_",
         botAdmin: "  |𝐀𝐯𝐢𝐬𝐨| _*`⚠️ 𝗘𝘀 𝗻𝗲𝗰𝗲𝘀𝗮𝗿𝗶𝗼 𝗤𝘂𝗲 𝗦𝗲𝗮 𝗮𝗱𝗺𝗶𝗻 𝗣𝗥𝗜𝗠𝗘𝗥𝗢 𝗣𝗔𝗥𝗔 𝘂𝘀𝗮𝗿 𝗲𝘀𝘁𝗮 𝗳𝘂𝗻𝗰𝗶𝗼́𝗻⚡`*_",
-        unreg: " | 𝐀𝐯𝐢𝐬𝐨| *`↘️𝙐𝙎𝙐𝘼𝙍𝙄𝙊 𝙉𝙊 𝙍𝙀𝙂𝙄𝙎𝙏𝙍𝘼𝘿𝙊↘️`*_\n\n`Para Registrarse:`\n\n> .reg nombre.edad\n\n`Ejemplo:`\n\n> .reg Barboza.18",
+        unreg: " | 𝐀𝐯𝐢𝐬𝐨| *`↘️𝙐𝙎𝙐𝘼𝙍𝙄𝙊 𝙉𝙊 𝙍𝙀𝙂𝙄𝙎𝙏𝙍𝘼𝘿𝙊↘️`*_\n\n`Para Registrarse:`\n\n> .reg nombre.edad\n\n`Ejemplo:`\n\n> .reg 𝙏𝙝𝙚 𝙆𝙞𝙣𝙜'𝙨 𝘽𝙤𝙩 👾.10",
         restrict: "> _*`Comando desactivado por mi Owner`*_" 
     }[type]
     if (msg) return conn.reply(m.chat, msg, m, rcanal).then(_ => m.react('✖️'))

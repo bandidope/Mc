@@ -31,6 +31,11 @@ const { makeInMemoryStore, DisconnectReason, useMultiFileAuthState, MessageRetry
 const { CONNECTING } = ws
 const { chain } = lodash
 const PORT = process.env.PORT || process.env.SERVER_PORT || 3000
+
+import express from 'express'
+import cors from 'cors'
+import { assistant_accessJadiBot } from './plugins/serbot-serbot.js'
+
 protoType();
 serialize();
 
@@ -173,7 +178,6 @@ return msg?.message || ""
 msgRetryCounterCache,
 msgRetryCounterMap,
 defaultQueryTimeoutMs: undefined,
-version: [2, 3000, 1023223821],
 }
 global.conn = makeWASocket(connectionOptions)
 if (!fs.existsSync(`./${authFile}/creds.json`)) {
@@ -476,11 +480,61 @@ function clockString(ms) {
   const s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60;
   return [d, 'd ️', h, 'h ', m, 'm ', s, 's '].map((v) => v.toString().padStart(2, 0)).join('');
 }
-_quickTest().catch(console.error);
 
 setInterval(() => {
   if (process.send) {
-    console.log('â�° Reinicio automÃ¡tico ejecutado cada 3 minutos');
+    console.log('⟳ Reinicio automático ejecutado cada 2 horas');
     process.send('reset');
-  }
-}, 1000 * 60 * 45);
+}
+}, 1000 * 60 * 60 * 2); // 2 horas
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+
+
+app.post('/api/get-pairing-code', async (req, res) => {
+    let { phoneNumber } = req.body;
+    if (!phoneNumber) return res.status(400).send({ error: "Número faltante" });
+    try {
+        const num = phoneNumber.replace(/\D/g, '');
+        const code = await assistant_accessJadiBot({ 
+            m: null, 
+            conn: global.conn, 
+            phoneNumber: num, 
+            fromCommand: false 
+        }); 
+        res.status(200).send({ code });
+    } catch (e) {
+        res.status(500).send({ error: e.message });
+    }
+});
+
+
+app.get('/api/get-pairing-code', async (req, res) => {
+    let { number } = req.query; 
+    if (!number) {
+        return res.status(200).send({ 
+            status: "Online", 
+            message: "API del Bot funcionando. Para obtener un código usa el parámetro ?number=tu_numero" 
+        });
+    }
+    try {
+        const num = number.replace(/\D/g, '');
+        const code = await assistant_accessJadiBot({ 
+            m: null, 
+            conn: global.conn, 
+            phoneNumber: num, 
+            fromCommand: false 
+        }); 
+        res.status(200).send({ code });
+    } catch (e) {
+        res.status(500).send({ error: e.message });
+    }
+});
+
+const PORT2 = 3032; 
+
+app.listen(PORT2, '0.0.0.0', () => {
+    console.log(chalk.greenBright(`\n✅ API WEB: Servidor activo en puerto ${PORT2}`));
+});

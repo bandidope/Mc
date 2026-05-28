@@ -1,5 +1,5 @@
 {
-  "name": "Barboza",
+  "name": "Keistop",
   "version": "2.2.0",
   "description": "Super WhatsApp Bot Multi Device",
   "main": "index.js",
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/meldexzz/bolibotmensual.git",
   "author": {
-    "name": "meldexzz"
+    "name": "Keistop"
   },
   "repository": {
     "type": "git",
@@ -37,7 +37,7 @@
     "@ibaraki-douji/pixivts": "^2.4.1",
     "@octokit/rest": "^21.1.1",
     "@vitalets/google-translate-api": "^8.0.0",
-    "@whiskeysockets/baileys": "github:EdderBot02/bail",   
+       "@whiskeysockets/baileys": "npm:wileys",
     "@xct007/frieren-scraper": "^0.0.2",
     "acrcloud": "^1.4.0",
     "api-dylux": "^1.7.2",
@@ -46,6 +46,7 @@
     "axios": "^1.1.2",
     "boxen": "^7.1.1",
     "cfonts": "^3.3.0",
+    "cors": "^2.8.5",
     "chalk": "^5.1.0",
     "cheerio": "npm:cheerio@1.0.0-rc.12",
     "didyoumean": "^1.2.2",
