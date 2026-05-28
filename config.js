@@ -9,13 +9,8 @@ import axios from 'axios'
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
   global.owner = [
-  [ '172056423456949@lid', 'Barboza OFC', true ],
-  [ '50577688033', 'Goku', true ],
-  [ '584146277368', 'Willzek', true ],
-  [ '174560573964411@lid', 'Rayo OFC', true ],
-  [ '18498640873', "I'm Fz ~", true ],
-  [ '573113406369', 'bajobots', true ],
-  [ '51928626068', "MediaHub",true ],
+  [ '222265178386528@lid', 'Whois OFC', true ],
+  [ '97861517766730@lid', 'Bot OFC', true ],
   [ '172056423456949', true ]
   ]
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
@@ -25,19 +20,19 @@ global.prems = []
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.packname = `[ sᥲsᥙkᥱ ᑲ᥆𝗍 🌀`
-global.author = 'sᥲsᥙkᥱ ᑲ᥆𝗍 mძ 🌀]'
-global.stickpack = '©sᥲsᥙkᥱ ᑲ᥆𝗍 mძ 🌀'
-global.stickauth = 'ᑲᥡ sᥲsᥙkᥱ ᑲ᥆𝗍'
-global.wm = 'sᥲsᥙkᥱ 🌀'
-global.dev = '© 𝖯᥆𝗐ᥱ𝗋ᥱძ ᑲᥡ 𝖲ᥙᥒ𝖿ᥣᥲ𝗋ᥱ  ☂︎  𝖳ᥱᥲ𝗆'
-global.wait = '🌪️ *Aɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ, sᴏʏ ʟᴇɴᴛ𝙾... ฅ^•ﻌ•^ฅ\n\n> sᥲsᥙkᥱ ᑲ᥆𝗍 mძ 🌀 🌪️*'
-global.botname = '[ sᥲsᥙkᥱ ᑲ᥆𝗍 mძ 🌀 ]'
-global.textbot = `⍴᥆ᥕᥱrᥱძ ᑲᥡ sᥲsᥙkᥱ 🌀`
-global.dev = '• ⍴᥆ᥕᥱrᥱძ ᑲᥡ ᥴ᥆mᥙᥒі𝗍ᥡ sᥲsᥙkᥱ ᑲ᥆𝗍 mძ 🌀'
+global.packname = `[ MᴄQᴜᴇᴇɴ Bᴏᴛ 🌀`
+global.author = 'MᴄQᴜᴇᴇɴ Bᴏᴛ 🌀]'
+global.stickpack = '© Pᴏᴡᴇʀᴇᴅ Bʏ Tᴇᴀᴍ Nɪɢʜᴛᴡɪsʜ 🌀'
+global.stickauth = 'MᴄQᴜᴇᴇɴ Bᴏᴛ 🌀'
+global.wm = 'MᴄQᴜᴇᴇɴ Bᴏᴛ 🌀'
+global.dev = '© Wʜᴏɪs Yᴀʟʟɪᴄᴏ'
+global.wait = '🌪️ *Aɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ, sᴏʏ ʟᴇɴᴛ𝙾... ฅ^•ﻌ•^ฅ\n\n> MᴄQᴜᴇᴇɴ Bᴏᴛ 🌀*'
+global.botname = '[ MᴄQᴜᴇᴇɴ Bᴏᴛ 🌀 ]'
+global.textbot = `Pᴏᴡᴇʀᴇᴅ Bʏ Tᴇᴀᴍ Nɪɢʜᴛᴡɪsʜ 🌀`
+global.dev = '• Pᴏᴡᴇʀᴇᴅ Bʏ Tᴇᴀᴍ Nɪɢʜᴛᴡɪsʜ  🌀'
 global.listo = '*Aqui tiene ฅ^•ﻌ•^ฅ*'
-global.namechannel = 'sᥲsᥙkᥱ ᑲ᥆𝗍 mძ 🌀'
-global.channel = 'https://whatsapp.com/channel/0029Vaua0ZD3gvWjQaIpSy18'
+global.namechannel = 'MᴄQᴜᴇᴇɴ Bᴏᴛ 🌀'
+global.channel = 'https://whatsapp.com/channel/0029Vb5oUp43LdQUVViHwc0m'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -46,9 +41,9 @@ global.miniurl = fs.readFileSync('./storage/img/miniurl.jpg')
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.group = 'https://chat.whatsapp.com/CBuLXuVZcg9FEfCSHiY6b0'
-global.canal = 'https://whatsapp.com/channel/0029Vaua0ZD3gvWjQaIpSy18'
-global.insta = 'https://www.insta.com/https://www.insta.com/sebastian_barboza13'
+global.group = 'https://chat.whatsapp.com/Fi6FHZ8VSGnAT7CKJkcd9r?mode=gi_t'
+global.canal = 'https://whatsapp.com/channel/0029Vb5oUp43LdQUVViHwc0m'
+global.insta = 'https://www.insta.com/https://www.insta.com/whois.yallico'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -56,8 +51,8 @@ global.catalogo = fs.readFileSync('./storage/img/catalogo.png');
 global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: packname, orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 
 global.ch = {
-ch1: '120363419364337473@newsletter',
-ch2: '120363414007802886@newsletter'
+ch1: '120363419947391620@newsletter',
+ch2: '120363419947391620@newsletter'
 }
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
