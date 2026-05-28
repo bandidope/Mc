@@ -34,7 +34,6 @@ const PORT = process.env.PORT || process.env.SERVER_PORT || 3000
 
 import express from 'express'
 import cors from 'cors'
-import { assistant_accessJadiBot } from './plugins/serbot-serbot.js'
 
 protoType();
 serialize();
